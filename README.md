@@ -4,7 +4,8 @@
 This is an example of how to use ytt to template helm values files to simplify the installation of multiple helm charts. In this case we are installing prometheus and grafana. 
 
 1) Install the carvel tool suite which includes ytt
-https://carvel.dev/
+
+* [Carvel](https://carvel.dev/)
 
 2) Clone this repository into a directory
 
