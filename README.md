@@ -24,5 +24,8 @@ kubectl create secret docker-registry pull-secret-name --docker-server=harbor.ta
 
 6) Customize the values.yml to set image repository, the registry pull secret and storage policy name.
 
+* [values.yml](https://github.com/bmullan-pivotal/fun-with-ytt/blob/main/values.yml)
+
 7) Run install-all.sh to install the helm charts using the templated values.
 
+* [install-all.sh](https://github.com/bmullan-pivotal/fun-with-ytt/blob/main/install-all.sh)
