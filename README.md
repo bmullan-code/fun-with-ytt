@@ -13,7 +13,12 @@ This is an example of how to use ytt to template helm values files to simplify t
 
 4) If necessary apply any changes to the chart values files in the values directory.
 
-5) Customize the values.yml to set image repository, the registry pull secret and storage policy name.
+5) If necessary, create a registry pull secret used to access your image repository
+```
+kubectl create secret docker-registry pull-secret-name --docker-server=harbor.tanzu.be --docker-username=bmullan --docker-password=*** --docker-email=***
+```
 
-6) Run install-all.sh to install the helm charts using the templated values.
+6) Customize the values.yml to set image repository, the registry pull secret and storage policy name.
+
+7) Run install-all.sh to install the helm charts using the templated values.
 
