@@ -1,5 +1,5 @@
 # fun-with-ytt
-fun-with-ytt
+
 
 This is an example of how to use ytt to template helm values files to simplify the installation of multiple helm charts. In this case we are installing prometheus and grafana. 
 
