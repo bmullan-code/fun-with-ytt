@@ -15,6 +15,8 @@ This is an example of how to use ytt to template helm values files to simplify t
 
 4) If necessary apply any changes to the chart values files in the values directory.
 
+* [values](https://github.com/bmullan-pivotal/fun-with-ytt/tree/main/values)
+
 5) If necessary, create a registry pull secret used to access your image repository
 ```
 kubectl create secret docker-registry pull-secret-name --docker-server=harbor.tanzu.be --docker-username=bmullan --docker-password=*** --docker-email=***
