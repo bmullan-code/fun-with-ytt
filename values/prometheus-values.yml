@@ -1,0 +1,29 @@
+#@ load("@ytt:data", "data")
+
+server:
+  persistentVolume:
+    storageClass: #@ data.values.storageclassname
+  image:
+    repository: #@ data.values.repo + "/prometheus"
+
+imagePullSecrets:
+- name: #@ data.values.pullsecret
+
+alertmanager:
+  image:
+    repository: #@ data.values.repo + "/alertmanager"
+
+nodeExporter:
+  image:
+    repository: #@ data.values.repo + "/node-exporter"
+
+
+configmapReload:
+  prometheus:
+    enabled: false
+
+pushgateway:
+  enabled: false
+
+kubeStateMetrics:
+  enabled: false
